@@ -33,6 +33,17 @@ public class CustomUserDetailsService implements UserDetailsService {
         return org.springframework.security.core.userdetails.User.withUsername((user).getUsername()).password(user.getPassword()).roles(user.getRoles().stream().map(role -> role.replace("ROLE_", "")).toArray(String[]::new)).build();
     }
 
+    public UserDetails loadUserByEmail(String email) throws UsernameNotFoundException {
+        User user = userRepository.findByEmail(email).orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
+        return org.springframework.security.core.userdetails.User
+                .withUsername(user.getUsername())  // Still use username for the UserDetails
+                .password(user.getPassword())
+                .roles(user.getRoles().stream()
+                        .map(role -> role.replace("ROLE_", ""))
+                        .toArray(String[]::new))
+                .build();
+    }
+
     public User saveUser(RegistrationRequest request) {
         if (userRepository.existsByUsername(request.getUsername())) {
             throw new RuntimeException("Username already taken.");
@@ -41,7 +52,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         User newUser = new User();
         newUser.setUsername(request.getUsername());
         newUser.setPassword(passwordEncoder.encode(request.getPassword()));
-        //newUser.setRoles(request.getRoles());
+        newUser.setRoles(request.getRoles());
         newUser.setEmail(request.getEmail());
 
         return userRepository.save(newUser);

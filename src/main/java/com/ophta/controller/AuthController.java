@@ -38,18 +38,38 @@ public class AuthController {
 
     @PostMapping("/login")
     public AuthenticationResponse createAuthenticationToken(@RequestBody AuthenticationRequest request) throws Exception {
+        UserDetails userDetails;
         try {
-            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));
+            String identifier = request.getUsername(); // This could be either email or username
+            String password = request.getPassword();
+
+            // Check if the identifier is an email or username
+            boolean isEmail = identifier.contains("@");
+
+            // Log the type of authentication being attempted
+            System.out.println("Authentication attempt with " + (isEmail ? "email" : "username") + ": " + identifier);
+
+
+            if (isEmail) {
+                // If it's an email, load user by email
+                userDetails = userDetailsService.loadUserByEmail(identifier);
+            } else {
+                // If it's a username, use the existing method
+                userDetails = userDetailsService.loadUserByUsername(identifier);
+            }
+
+            // Attempt authentication with the credentials
+            authenticationManager.authenticate(
+                    new UsernamePasswordAuthenticationToken(userDetails.getUsername(), password)
+            );
         } catch (Exception e) {
-            throw new Exception("Invalid username or password", e);
+            throw new Exception("Invalid username/email or password", e);
         }
 
-        UserDetails userDetails = userDetailsService.loadUserByUsername(request.getUsername());
         String jwt = jwtUtil.generateToken(userDetails.getUsername());
 
         return new AuthenticationResponse(jwt);
     }
-
     @PostMapping("/register")
     @ResponseBody
     public ResponseEntity<Map<String, String>> registerUser(@RequestBody RegistrationRequest request) {

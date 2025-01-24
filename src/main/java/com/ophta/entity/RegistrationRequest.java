@@ -8,7 +8,7 @@ import java.util.Set;
 public class RegistrationRequest {
     private String username;
     private String password;
-    //private Set<String> roles;; // For role-based access
+    private Set<String> roles;; // For role-based access
     private String email;
 
     // Getters and Setters
