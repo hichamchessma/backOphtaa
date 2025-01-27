@@ -21,8 +21,8 @@ public class Patient {
     @Column(nullable = false, length = 50)
     private String prenom;
 
-    @Column(nullable = false, name = "date_maissance")
-    private LocalDate dateMaissance;
+    @Column(nullable = false, name = "date_naissance")
+    private LocalDate dateNaissance;
 
     @Column(length = 20)
     private String telephone;
