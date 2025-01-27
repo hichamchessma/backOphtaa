@@ -1,39 +1,47 @@
 package com.ophta.entity;
 
 import jakarta.persistence.*;
+
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
+
 import lombok.Data;
 
-@Entity
 @Data
+@Entity
 @Table(name = "RendezVous")
 public class RendezVous {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, name = "date_heure")
-    private LocalDateTime dateHeure;
+    @Column(nullable = false)
+    private Long patientId;
 
-    @Column(columnDefinition = "TEXT")
-    private String motif;
+    @Column(nullable = false, length = 100)
+    private String patientName;
 
-    @Column(length = 50)
-    private String statut = "Planifié";
+    @Column(nullable = false)
+    private LocalDate date;
 
-    @ManyToOne
-    @JoinColumn(name = "medecin_id")
-    private Medecin medecin;
+    @Column(nullable = false)
+    private LocalTime time;
 
-    @ManyToOne
-    @JoinColumn(name = "patient_id")
-    private Patient patient;
+    @Column(length = 255)
+    private String reason;
 
-    @Column(name = "created_at")
-    private LocalDateTime createdAt;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private AppointmentStatus status;
 
-    @PrePersist
-    protected void onCreate() {
-        createdAt = LocalDateTime.now();
+    @Column(length = 1000)
+    private String notes;
+
+    @Column(nullable = false)
+    private Long doctorId;
+
+    public enum AppointmentStatus {
+        CONFIRME, EN_ATTENTE, ANNULE
     }
 }

@@ -1,97 +1,4 @@
-2025-01-24 00:51:43 [main] INFO  com.ophta.OphtaApplication - Starting OphtaApplication using Java 17.0.4 with PID 13988 (C:\OphtaApp\backOphta\build\classes\java\main started by hicha in C:\OphtaApp\backOphta)
-2025-01-24 00:51:43 [main] INFO  com.ophta.OphtaApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-24 00:51:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-24 00:51:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 7 JPA repository interfaces.
-2025-01-24 00:51:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-01-24 00:51:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-01-24 00:51:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
-2025-01-24 00:51:44 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2025-01-24 00:51:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1193 ms
-2025-01-24 00:51:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-24 00:51:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2025-01-24 00:51:44 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-01-24 00:51:44 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-24 00:51:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-01-24 00:51:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69c33ea2
-2025-01-24 00:51:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-01-24 00:51:45 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-24 00:51:45 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-01-24 00:51:45 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-24 00:51:45 [main] DEBUG org.hibernate.SQL - 
-    alter table consultation 
-       modify column observations TEXT
-2025-01-24 00:51:45 [main] DEBUG org.hibernate.SQL - 
-    alter table consultation 
-       modify column traitement_prescrit TEXT
-2025-01-24 00:51:45 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column allergies TEXT
-2025-01-24 00:51:45 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column antecedents TEXT
-2025-01-24 00:51:45 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column traitements_en_cours TEXT
-2025-01-24 00:51:45 [main] DEBUG org.hibernate.SQL - 
-    alter table notification 
-       modify column message TEXT not null
-2025-01-24 00:51:45 [main] DEBUG org.hibernate.SQL - 
-    alter table rendez_vous 
-       modify column motif TEXT
-2025-01-24 00:51:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-24 00:51:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-24 00:51:46 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-01-24 00:51:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
-2025-01-24 00:51:46 [main] INFO  com.ophta.OphtaApplication - Started OphtaApplication in 4.327 seconds (process running for 4.816)
-2025-01-24 00:52:16 [main] INFO  com.ophta.OphtaApplication - Starting OphtaApplication using Java 17.0.4 with PID 7704 (C:\OphtaApp\backOphta\build\classes\java\main started by hicha in C:\OphtaApp\backOphta)
-2025-01-24 00:52:16 [main] INFO  com.ophta.OphtaApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-24 00:52:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-24 00:52:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 7 JPA repository interfaces.
-2025-01-24 00:52:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-01-24 00:52:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-01-24 00:52:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
-2025-01-24 00:52:17 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2025-01-24 00:52:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 972 ms
-2025-01-24 00:52:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-24 00:52:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2025-01-24 00:52:17 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-01-24 00:52:17 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-24 00:52:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-01-24 00:52:18 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3350ab4
-2025-01-24 00:52:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-01-24 00:52:18 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-24 00:52:18 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-01-24 00:52:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-24 00:52:18 [main] DEBUG org.hibernate.SQL - 
-    alter table consultation 
-       modify column observations TEXT
-2025-01-24 00:52:18 [main] DEBUG org.hibernate.SQL - 
-    alter table consultation 
-       modify column traitement_prescrit TEXT
-2025-01-24 00:52:18 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column allergies TEXT
-2025-01-24 00:52:18 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column antecedents TEXT
-2025-01-24 00:52:18 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column traitements_en_cours TEXT
-2025-01-24 00:52:18 [main] DEBUG org.hibernate.SQL - 
-    alter table notification 
-       modify column message TEXT not null
-2025-01-24 00:52:18 [main] DEBUG org.hibernate.SQL - 
-    alter table rendez_vous 
-       modify column motif TEXT
-2025-01-24 00:52:19 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-24 00:52:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-24 00:52:19 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-01-24 00:52:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
-2025-01-24 00:52:19 [main] INFO  com.ophta.OphtaApplication - Started OphtaApplication in 3.573 seconds (process running for 3.848)
-2025-01-24 01:04:38 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-24 01:04:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-01-24 01:04:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-01-24 01:04:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2025-01-27 00:01:41 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.email,
@@ -101,234 +8,8 @@
     from
         user u1_0 
     where
-        u1_0.username=?
-2025-01-24 01:04:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.username=?
-2025-01-24 01:06:09 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id 
-    from
-        user u1_0 
-    where
-        u1_0.username=? 
-    limit
-        ?
-2025-01-24 01:06:09 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    insert 
-    into
-        user
-        (email, password, reset_token, username) 
-    values
-        (?, ?, ?, ?)
-2025-01-24 01:07:03 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.username=?
-2025-01-24 01:07:04 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.username=?
-2025-01-24 01:07:35 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.username=?
-2025-01-24 01:07:35 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.username=?
-2025-01-24 01:07:54 [main] INFO  com.ophta.OphtaApplication - Starting OphtaApplication using Java 17.0.4 with PID 24188 (C:\OphtaApp\backOphta\build\classes\java\main started by hicha in C:\OphtaApp\backOphta)
-2025-01-24 01:07:54 [main] INFO  com.ophta.OphtaApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-24 01:07:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-24 01:07:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 7 JPA repository interfaces.
-2025-01-24 01:07:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-01-24 01:07:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-01-24 01:07:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
-2025-01-24 01:07:55 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2025-01-24 01:07:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 989 ms
-2025-01-24 01:07:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-24 01:07:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2025-01-24 01:07:55 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-01-24 01:07:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-24 01:07:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-01-24 01:07:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5503c7d
-2025-01-24 01:07:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-01-24 01:07:55 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-24 01:07:55 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-01-24 01:07:56 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-24 01:07:56 [main] DEBUG org.hibernate.SQL - 
-    alter table consultation 
-       modify column observations TEXT
-2025-01-24 01:07:56 [main] DEBUG org.hibernate.SQL - 
-    alter table consultation 
-       modify column traitement_prescrit TEXT
-2025-01-24 01:07:56 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column allergies TEXT
-2025-01-24 01:07:56 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column antecedents TEXT
-2025-01-24 01:07:56 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column traitements_en_cours TEXT
-2025-01-24 01:07:56 [main] DEBUG org.hibernate.SQL - 
-    alter table notification 
-       modify column message TEXT not null
-2025-01-24 01:07:56 [main] DEBUG org.hibernate.SQL - 
-    alter table rendez_vous 
-       modify column motif TEXT
-2025-01-24 01:07:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-24 01:07:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-24 01:07:57 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-01-24 01:07:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
-2025-01-24 01:07:58 [main] INFO  com.ophta.OphtaApplication - Started OphtaApplication in 4.261 seconds (process running for 4.573)
-2025-01-24 01:12:44 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-24 01:12:44 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-01-24 01:12:44 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-01-24 01:13:03 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.username=?
-2025-01-24 01:13:05 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.username=?
-2025-01-24 11:05:24 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h52m22s649ms211µs700ns).
-2025-01-24 11:05:24 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to flush: java.io.IOException: Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte]
-2025-01-24 11:20:05 [main] INFO  com.ophta.OphtaApplication - Starting OphtaApplication using Java 17.0.4 with PID 27176 (C:\OphtaApp\backOphta\build\classes\java\main started by hicha in C:\OphtaApp\backOphta)
-2025-01-24 11:20:05 [main] INFO  com.ophta.OphtaApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-24 11:20:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-24 11:20:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 7 JPA repository interfaces.
-2025-01-24 11:20:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-01-24 11:20:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-01-24 11:20:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
-2025-01-24 11:20:06 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2025-01-24 11:20:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1049 ms
-2025-01-24 11:20:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-24 11:20:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2025-01-24 11:20:06 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-01-24 11:20:06 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-24 11:20:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-01-24 11:20:07 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3460e4ed
-2025-01-24 11:20:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-01-24 11:20:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-24 11:20:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-01-24 11:20:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-24 11:20:07 [main] DEBUG org.hibernate.SQL - 
-    alter table consultation 
-       modify column observations TEXT
-2025-01-24 11:20:08 [main] DEBUG org.hibernate.SQL - 
-    alter table consultation 
-       modify column traitement_prescrit TEXT
-2025-01-24 11:20:08 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column allergies TEXT
-2025-01-24 11:20:08 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column antecedents TEXT
-2025-01-24 11:20:08 [main] DEBUG org.hibernate.SQL - 
-    alter table dossier_medical 
-       modify column traitements_en_cours TEXT
-2025-01-24 11:20:08 [main] DEBUG org.hibernate.SQL - 
-    alter table notification 
-       modify column message TEXT not null
-2025-01-24 11:20:08 [main] DEBUG org.hibernate.SQL - 
-    alter table rendez_vous 
-       modify column motif TEXT
-2025-01-24 11:20:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-24 11:20:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-24 11:20:08 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-01-24 11:20:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
-2025-01-24 11:20:08 [main] INFO  com.ophta.OphtaApplication - Started OphtaApplication in 3.858 seconds (process running for 4.16)
-2025-01-24 11:21:11 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-24 11:21:11 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-01-24 11:21:11 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-01-24 11:28:01 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m54s334ms526µs100ns).
-2025-01-24 11:28:02 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.username=?
-2025-01-24 11:28:04 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.username=?
-2025-01-24 11:33:50 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m49s185ms461µs900ns).
-2025-01-24 11:37:38 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.username=?
-2025-01-24 11:37:38 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+        u1_0.email=?
+2025-01-27 00:01:41 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
     select
         r1_0.user_id,
         r1_0.roles 
@@ -336,7 +17,7 @@
         user_roles r1_0 
     where
         r1_0.user_id=?
-2025-01-24 11:37:42 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+2025-01-27 00:01:41 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.email,
@@ -347,55 +28,82 @@
         user u1_0 
     where
         u1_0.username=?
-2025-01-24 12:19:21 [main] INFO  com.ophta.OphtaApplication - Starting OphtaApplication using Java 17.0.4 with PID 30444 (C:\OphtaApp\backOphta\build\classes\java\main started by hicha in C:\OphtaApp\backOphta)
-2025-01-24 12:19:21 [main] INFO  com.ophta.OphtaApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-24 12:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-24 12:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 7 JPA repository interfaces.
-2025-01-24 12:19:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-01-24 12:19:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-01-24 12:19:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
-2025-01-24 12:19:22 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2025-01-24 12:19:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1063 ms
-2025-01-24 12:19:22 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-24 12:19:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2025-01-24 12:19:23 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-01-24 12:19:23 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-24 12:19:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-01-24 12:19:23 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b0e9e0c
-2025-01-24 12:19:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-01-24 12:19:23 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-24 12:19:23 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-01-24 12:19:24 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-24 12:19:24 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 00:02:08 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.reset_token,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2025-01-27 00:02:08 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_0.roles 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+2025-01-27 00:02:08 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.reset_token,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2025-01-27 00:12:58 [main] INFO  com.ophta.OphtaApplication - Starting OphtaApplication using Java 17.0.4 with PID 16048 (C:\OphtaApp\backOphta\build\classes\java\main started by hicha in C:\OphtaApp\backOphta)
+2025-01-27 00:12:58 [main] INFO  com.ophta.OphtaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 00:12:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-27 00:12:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 7 JPA repository interfaces.
+2025-01-27 00:13:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-27 00:13:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-27 00:13:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-01-27 00:13:00 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-01-27 00:13:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1380 ms
+2025-01-27 00:13:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-27 00:13:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-01-27 00:13:00 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-27 00:13:00 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-27 00:13:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-27 00:13:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59e0d521
+2025-01-27 00:13:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-27 00:13:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-27 00:13:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-27 00:13:02 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-27 00:13:02 [main] DEBUG org.hibernate.SQL - 
     alter table consultation 
        modify column observations TEXT
-2025-01-24 12:19:24 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 00:13:02 [main] DEBUG org.hibernate.SQL - 
     alter table consultation 
        modify column traitement_prescrit TEXT
-2025-01-24 12:19:24 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 00:13:02 [main] DEBUG org.hibernate.SQL - 
     alter table dossier_medical 
        modify column allergies TEXT
-2025-01-24 12:19:24 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 00:13:02 [main] DEBUG org.hibernate.SQL - 
     alter table dossier_medical 
        modify column antecedents TEXT
-2025-01-24 12:19:24 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 00:13:02 [main] DEBUG org.hibernate.SQL - 
     alter table dossier_medical 
        modify column traitements_en_cours TEXT
-2025-01-24 12:19:24 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 00:13:02 [main] DEBUG org.hibernate.SQL - 
     alter table notification 
        modify column message TEXT not null
-2025-01-24 12:19:24 [main] DEBUG org.hibernate.SQL - 
-    alter table rendez_vous 
-       modify column motif TEXT
-2025-01-24 12:19:24 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-24 12:19:24 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-24 12:19:24 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-01-24 12:19:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
-2025-01-24 12:19:25 [main] INFO  com.ophta.OphtaApplication - Started OphtaApplication in 3.956 seconds (process running for 4.269)
-2025-01-24 12:20:05 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-24 12:20:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-01-24 12:20:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-01-24 12:20:15 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+2025-01-27 00:13:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27 00:13:02 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-27 00:13:02 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-27 00:13:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-01-27 00:13:03 [main] INFO  com.ophta.OphtaApplication - Started OphtaApplication in 5.017 seconds (process running for 5.435)
+2025-01-27 00:13:21 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 00:13:21 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-27 00:13:21 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-27 00:13:21 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.email,
@@ -406,41 +114,7 @@
         user u1_0 
     where
         u1_0.email=?
-2025-01-24 12:21:06 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.email=?
-2025-01-24 12:21:51 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.email=?
-2025-01-24 12:22:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s796ms742µs600ns).
-2025-01-24 12:22:46 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
-    from
-        user u1_0 
-    where
-        u1_0.email=?
-2025-01-24 12:22:46 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2025-01-27 00:13:21 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
     select
         r1_0.user_id,
         r1_0.roles 
@@ -448,7 +122,7 @@
         user_roles r1_0 
     where
         r1_0.user_id=?
-2025-01-24 12:22:50 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2025-01-27 00:13:22 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.email,
@@ -459,18 +133,184 @@
         user u1_0 
     where
         u1_0.username=?
-2025-01-24 12:22:55 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
     select
-        u1_0.id,
-        u1_0.email,
-        u1_0.password,
-        u1_0.reset_token,
-        u1_0.username 
+        p1_0.id,
+        p1_0.adresse,
+        p1_0.created_at,
+        p1_0.date_maissance,
+        p1_0.dernier_rdv,
+        p1_0.email,
+        p1_0.nom,
+        p1_0.notes,
+        p1_0.numero_securite_sociale,
+        p1_0.prenom,
+        p1_0.prochain_adv,
+        p1_0.telephone 
     from
-        user u1_0 
+        patient p1_0
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
     where
-        u1_0.username=?
-2025-01-24 12:23:21 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 00:13:28 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 11:22:08 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h11m34s288ms808µs199ns).
+2025-01-27 13:13:26 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.email,
@@ -481,7 +321,7 @@
         user u1_0 
     where
         u1_0.email=?
-2025-01-24 12:23:21 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+2025-01-27 13:13:26 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
     select
         r1_0.user_id,
         r1_0.roles 
@@ -489,7 +329,7 @@
         user_roles r1_0 
     where
         r1_0.user_id=?
-2025-01-24 12:23:50 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+2025-01-27 13:13:26 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.email,
@@ -500,7 +340,730 @@
         user u1_0 
     where
         u1_0.username=?
-2025-01-24 12:24:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.adresse,
+        p1_0.created_at,
+        p1_0.date_maissance,
+        p1_0.dernier_rdv,
+        p1_0.email,
+        p1_0.nom,
+        p1_0.notes,
+        p1_0.numero_securite_sociale,
+        p1_0.prenom,
+        p1_0.prochain_adv,
+        p1_0.telephone 
+    from
+        patient p1_0
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:29 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.adresse,
+        p1_0.created_at,
+        p1_0.date_maissance,
+        p1_0.dernier_rdv,
+        p1_0.email,
+        p1_0.nom,
+        p1_0.notes,
+        p1_0.numero_securite_sociale,
+        p1_0.prenom,
+        p1_0.prochain_adv,
+        p1_0.telephone 
+    from
+        patient p1_0
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:30 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.adresse,
+        p1_0.created_at,
+        p1_0.date_maissance,
+        p1_0.dernier_rdv,
+        p1_0.email,
+        p1_0.nom,
+        p1_0.notes,
+        p1_0.numero_securite_sociale,
+        p1_0.prenom,
+        p1_0.prochain_adv,
+        p1_0.telephone 
+    from
+        patient p1_0
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:40 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.adresse,
+        p1_0.created_at,
+        p1_0.date_maissance,
+        p1_0.dernier_rdv,
+        p1_0.email,
+        p1_0.nom,
+        p1_0.notes,
+        p1_0.numero_securite_sociale,
+        p1_0.prenom,
+        p1_0.prochain_adv,
+        p1_0.telephone 
+    from
+        patient p1_0
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:13:41 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:02 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.reset_token,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2025-01-27 13:14:02 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_0.roles 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+2025-01-27 13:14:02 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.email,
@@ -511,55 +1074,932 @@
         user u1_0 
     where
         u1_0.username=?
-2025-01-24 12:26:01 [main] INFO  com.ophta.OphtaApplication - Starting OphtaApplication using Java 17.0.4 with PID 15540 (C:\OphtaApp\backOphta\build\classes\java\main started by hicha in C:\OphtaApp\backOphta)
-2025-01-24 12:26:01 [main] INFO  com.ophta.OphtaApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-24 12:26:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-24 12:26:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 7 JPA repository interfaces.
-2025-01-24 12:26:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-01-24 12:26:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-01-24 12:26:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
-2025-01-24 12:26:02 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2025-01-24 12:26:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1050 ms
-2025-01-24 12:26:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-24 12:26:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2025-01-24 12:26:03 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-01-24 12:26:03 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-24 12:26:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-01-24 12:26:03 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3460e4ed
-2025-01-24 12:26:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-01-24 12:26:03 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-24 12:26:03 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-01-24 12:26:04 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-24 12:26:04 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.adresse,
+        p1_0.created_at,
+        p1_0.date_maissance,
+        p1_0.dernier_rdv,
+        p1_0.email,
+        p1_0.nom,
+        p1_0.notes,
+        p1_0.numero_securite_sociale,
+        p1_0.prenom,
+        p1_0.prochain_adv,
+        p1_0.telephone 
+    from
+        patient p1_0
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:04 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:13 [main] INFO  com.ophta.OphtaApplication - Starting OphtaApplication using Java 17.0.4 with PID 33104 (C:\OphtaApp\backOphta\build\classes\java\main started by hicha in C:\OphtaApp\backOphta)
+2025-01-27 13:14:13 [main] INFO  com.ophta.OphtaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 13:14:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-27 13:14:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 7 JPA repository interfaces.
+2025-01-27 13:14:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-27 13:14:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-27 13:14:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-01-27 13:14:14 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-01-27 13:14:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 976 ms
+2025-01-27 13:14:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-27 13:14:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-01-27 13:14:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-27 13:14:15 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-27 13:14:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-27 13:14:15 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7827d7b
+2025-01-27 13:14:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-27 13:14:15 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-27 13:14:15 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-27 13:14:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-27 13:14:16 [main] DEBUG org.hibernate.SQL - 
     alter table consultation 
        modify column observations TEXT
-2025-01-24 12:26:04 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 13:14:16 [main] DEBUG org.hibernate.SQL - 
     alter table consultation 
        modify column traitement_prescrit TEXT
-2025-01-24 12:26:04 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 13:14:16 [main] DEBUG org.hibernate.SQL - 
     alter table dossier_medical 
        modify column allergies TEXT
-2025-01-24 12:26:04 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 13:14:16 [main] DEBUG org.hibernate.SQL - 
     alter table dossier_medical 
        modify column antecedents TEXT
-2025-01-24 12:26:04 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 13:14:16 [main] DEBUG org.hibernate.SQL - 
     alter table dossier_medical 
        modify column traitements_en_cours TEXT
-2025-01-24 12:26:04 [main] DEBUG org.hibernate.SQL - 
+2025-01-27 13:14:16 [main] DEBUG org.hibernate.SQL - 
     alter table notification 
        modify column message TEXT not null
-2025-01-24 12:26:04 [main] DEBUG org.hibernate.SQL - 
-    alter table rendez_vous 
-       modify column motif TEXT
-2025-01-24 12:26:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-24 12:26:04 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-24 12:26:04 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-01-24 12:26:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
-2025-01-24 12:26:05 [main] INFO  com.ophta.OphtaApplication - Started OphtaApplication in 3.829 seconds (process running for 4.15)
-2025-01-24 12:27:09 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-24 12:27:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-01-24 12:27:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-01-24 12:27:16 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+2025-01-27 13:14:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27 13:14:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-27 13:14:16 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-27 13:14:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-01-27 13:14:16 [main] INFO  com.ophta.OphtaApplication - Started OphtaApplication in 3.602 seconds (process running for 3.885)
+2025-01-27 13:14:19 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 13:14:19 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-27 13:14:19 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.adresse,
+        p1_0.created_at,
+        p1_0.date_maissance,
+        p1_0.dernier_rdv,
+        p1_0.email,
+        p1_0.nom,
+        p1_0.notes,
+        p1_0.numero_securite_sociale,
+        p1_0.prenom,
+        p1_0.prochain_adv,
+        p1_0.telephone 
+    from
+        patient p1_0
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:19 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.adresse,
+        p1_0.created_at,
+        p1_0.date_maissance,
+        p1_0.dernier_rdv,
+        p1_0.email,
+        p1_0.nom,
+        p1_0.notes,
+        p1_0.numero_securite_sociale,
+        p1_0.prenom,
+        p1_0.prochain_adv,
+        p1_0.telephone 
+    from
+        patient p1_0
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:20 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.adresse,
+        p1_0.created_at,
+        p1_0.date_maissance,
+        p1_0.dernier_rdv,
+        p1_0.email,
+        p1_0.nom,
+        p1_0.notes,
+        p1_0.numero_securite_sociale,
+        p1_0.prenom,
+        p1_0.prochain_adv,
+        p1_0.telephone 
+    from
+        patient p1_0
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:21 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.adresse,
+        p1_0.created_at,
+        p1_0.date_maissance,
+        p1_0.dernier_rdv,
+        p1_0.email,
+        p1_0.nom,
+        p1_0.notes,
+        p1_0.numero_securite_sociale,
+        p1_0.prenom,
+        p1_0.prochain_adv,
+        p1_0.telephone 
+    from
+        patient p1_0
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:14:22 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.patient_id,
+        a1_0.antecedent 
+    from
+        patient_antecedents a1_0 
+    where
+        a1_0.patient_id=?
+2025-01-27 13:15:13 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.email,
@@ -570,7 +2010,7 @@
         user u1_0 
     where
         u1_0.email=?
-2025-01-24 12:27:16 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+2025-01-27 13:15:13 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
     select
         r1_0.user_id,
         r1_0.roles 
@@ -578,7 +2018,7 @@
         user_roles r1_0 
     where
         r1_0.user_id=?
-2025-01-24 12:27:18 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+2025-01-27 13:15:13 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.email,
@@ -589,3 +2029,45 @@
         user u1_0 
     where
         u1_0.username=?
+2025-01-27 16:07:19 [main] INFO  com.ophta.OphtaApplication - Starting OphtaApplication using Java 17.0.4 with PID 12588 (C:\OphtaApp\backOphta\build\classes\java\main started by hicha in C:\OphtaApp\backOphta)
+2025-01-27 16:07:19 [main] INFO  com.ophta.OphtaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 16:07:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-27 16:07:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 7 JPA repository interfaces.
+2025-01-27 16:07:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-27 16:07:21 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-27 16:07:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-01-27 16:07:21 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-01-27 16:07:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1616 ms
+2025-01-27 16:07:21 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-27 16:07:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-01-27 16:07:21 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-27 16:07:21 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-27 16:07:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-27 16:07:22 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59e0d521
+2025-01-27 16:07:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-27 16:07:22 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-27 16:07:22 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-27 16:07:23 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-27 16:07:23 [main] DEBUG org.hibernate.SQL - 
+    alter table consultation 
+       modify column observations TEXT
+2025-01-27 16:07:23 [main] DEBUG org.hibernate.SQL - 
+    alter table consultation 
+       modify column traitement_prescrit TEXT
+2025-01-27 16:07:23 [main] DEBUG org.hibernate.SQL - 
+    alter table dossier_medical 
+       modify column allergies TEXT
+2025-01-27 16:07:23 [main] DEBUG org.hibernate.SQL - 
+    alter table dossier_medical 
+       modify column antecedents TEXT
+2025-01-27 16:07:23 [main] DEBUG org.hibernate.SQL - 
+    alter table dossier_medical 
+       modify column traitements_en_cours TEXT
+2025-01-27 16:07:23 [main] DEBUG org.hibernate.SQL - 
+    alter table notification 
+       modify column message TEXT not null
+2025-01-27 16:07:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27 16:07:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-27 16:07:24 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-27 16:07:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-01-27 16:07:24 [main] INFO  com.ophta.OphtaApplication - Started OphtaApplication in 5.721 seconds (process running for 6.225)
